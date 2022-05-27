@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -58,7 +59,7 @@ body p {
 }
 
 @media all and (min-width: 768px) {
-  .header .picture .banner .botonera:hover .botonera {
+  .header .picture .banner .botonera:hover {
     text-align: center;
   }
 }
@@ -120,7 +121,7 @@ body p {
 }
 
 @media all and (max-width: 768px) {
-  .midLane .destacadoInicio .tituloInicio:hover .midLane {
+  .midLane .destacadoInicio .tituloInicio:hover {
     display: -ms-grid;
     display: grid;
     max-width: 100%;
@@ -128,7 +129,7 @@ body p {
 }
 
 @media all and (max-width: 768px) and (min-width: 768px) {
-  .midLane .destacadoInicio .tituloInicio:hover .midLane .destacadoInicio {
+  .midLane .destacadoInicio .tituloInicio:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -169,7 +170,7 @@ body p {
   opacity: 0.8;
 }
 
-.footer .footer li {
+.footer .footer {
   /*botonera del footer*/
   display: inline-block;
   margin: 10px;
@@ -178,7 +179,7 @@ body p {
   opacity: 1;
 }
 
-.footer .footer li .botoneraFooter {
+.footer .footer .botoneraFooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

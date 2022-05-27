@@ -1,3 +1,4 @@
+@import "letras";
 *{
     margin: 0%;
     padding: 0%;
@@ -37,15 +38,15 @@ body{
         background-color: yellow;
         color: tomato;
 @media all and (min-width: 768px){
-            .botonera{
             text-align: center;
+            
 }
 }
 }
 }
 }
 }
-}
+
 .midLane{/* zonas de contenido*/
     grid-area: midLane;
     display: flex;
@@ -70,16 +71,12 @@ body{
 &:hover{
     transform: scale(1.1);
 @media all and (max-width: 768px){
-.midLane{
         display: grid;
         max-width: 100%;
  @media all and (min-width: 768px){
-    .destacadoInicio {
         display: flex;
         justify-content: center;
     }
-}
-}
 }
 }
 }
@@ -103,7 +100,7 @@ body{
     width: 100%;
     grid-area: footer;
     opacity: 0.8;
-.footer li{/*botonera del footer*/
+.footer {/*botonera del footer*/
     display: inline-block;
      margin: 10px;
      border: 3px solid;
