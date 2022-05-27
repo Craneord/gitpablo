@@ -1,0 +1,193 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: yellow;
+  background-image: url(../assets/fondo.jpg);
+  background-size: 100%;
+}
+
+body p {
+  /*todos los parrafos dentro del body*/
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header {
+  /*encabezado entero*/
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  grid-area: header;
+}
+
+.header .picture {
+  width: 100%;
+}
+
+.header .picture .banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+}
+
+.header .picture .banner .botonera {
+  /* Botonera*/
+  display: inline-block;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5px;
+  border: 3px dashed;
+  padding: 3px;
+  margin-left: 5vh;
+  color: yellow;
+}
+
+.header .picture .banner .botonera:hover {
+  background-color: yellow;
+  color: tomato;
+}
+
+@media all and (min-width: 768px) {
+  .header .picture .banner .botonera:hover .botonera {
+    text-align: center;
+  }
+}
+
+.midLane {
+  /* zonas de contenido*/
+  grid-area: midLane;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.midLane .destacadoInicio {
+  grid-area: midLane;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.midLane .destacadoInicio .tituloInicio {
+  /* cualquier tipo de titulo*/
+  font-size: 33px;
+  color: #e29810;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.midLane .destacadoInicio .tituloInicio:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media all and (max-width: 768px) {
+  .midLane .destacadoInicio .tituloInicio:hover .midLane {
+    display: -ms-grid;
+    display: grid;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 768px) {
+  .midLane .destacadoInicio .tituloInicio:hover .midLane .destacadoInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contenedorInicio {
+  grid-area: midLane;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100vh;
+  margin: auto;
+}
+
+@media all and (max-width: 768px) {
+  .contenedorInicio .contenedorInicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer {
+  /*seccion footer anclado*/
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+  width: 100%;
+  grid-area: footer;
+  opacity: 0.8;
+}
+
+.footer .footer li {
+  /*botonera del footer*/
+  display: inline-block;
+  margin: 10px;
+  border: 3px solid;
+  padding: 3px;
+  opacity: 1;
+}
+
+.footer .footer li .botoneraFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,21 @@
+.containerInicio .narampol {
+  width: 100%;
+  display: flex;
+}
+
+.color {
+  color: red;
+}
+
+.containerInicio :hover p {
+  overflow: auto;
+}
+
+.color {
+  color: blue;
+  width: 100%;
+}
+
+.color {
+  margin-top: 1px;
+}

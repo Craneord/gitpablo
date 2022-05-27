@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: yellow;
+    background-image: url(../assets/fondo.jpg);
+    background-size: 100%;
+    p{/*todos los parrafos dentro del body*/
+    font-size: 2rem;
+    text-align: center;
+    }
+}
+.header{/*encabezado entero*/
+    display: grid;
+    justify-items: center;
+    grid-area: header;
+.picture{
+    width: 100%;   
+.banner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+.botonera{/* Botonera*/
+        display: inline-block ;
+        flex-wrap: nowrap;
+        margin: 5px;
+        border: 3px dashed;
+        padding: 3px;
+        margin-left: 5vh;
+        color: yellow;
+&:hover{
+        background-color: yellow;
+        color: tomato;
+@media all and (min-width: 768px){
+            .botonera{
+            text-align: center;
+}
+}
+}
+}
+}
+}
+}
+.midLane{/* zonas de contenido*/
+    grid-area: midLane;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+.destacadoInicio{
+    grid-area: midLane;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+.tituloInicio{/* cualquier tipo de titulo*/
+    font-size: 33px;
+    color: rgb(226, 152, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    transition: all 250ms;
+&:hover{
+    transform: scale(1.1);
+@media all and (max-width: 768px){
+.midLane{
+        display: grid;
+        max-width: 100%;
+ @media all and (min-width: 768px){
+    .destacadoInicio {
+        display: flex;
+        justify-content: center;
+    }
+}
+}
+}
+}
+}
+}
+}
+.contenedorInicio{
+    grid-area: midLane;
+    display: flex;
+    max-width: 100vh;
+    margin: auto;
+@media all and (max-width: 768px){
+.contenedorInicio{
+            flex-direction: column;
+            align-items: center;
+}
+}
+}
+.footer{/*seccion footer anclado*/
+    display: grid;
+    background-color: black;
+    width: 100%;
+    grid-area: footer;
+    opacity: 0.8;
+.footer li{/*botonera del footer*/
+    display: inline-block;
+     margin: 10px;
+     border: 3px solid;
+    padding: 3px;
+    opacity: 1;
+.botoneraFooter{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+}
+}
