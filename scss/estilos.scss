@@ -1,10 +1,13 @@
-@import "letras";
-
+@import "variables";
+@import "fuentes";
 * {
     margin: 0%;
     padding: 0%;
 }
-
+.color{
+    color: red;
+    display: none;
+}
 body {
     font-family: 'Alfa Slab One', cursive;
     font-size: 1.3rem;
@@ -139,3 +142,21 @@ body {
         }
     }
 }
+@mixin responsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.d-flex{
+    @include responsive;
+}
+.chatSoporte {
+    /*va a estar afuera de todo*/
+    background-color: red;
+    color: white;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2;
+  }
+  /*# sourceMappingURL=estilos.css.map */
