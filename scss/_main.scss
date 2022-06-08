@@ -1,0 +1,6 @@
+body{
+    font-family: 'Spline Sans', sans-serif;
+}
+.fuente-bold{
+    font-weight: map-get($fuentes, bold );
+}

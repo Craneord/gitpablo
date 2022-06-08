@@ -1,0 +1,38 @@
+.header {
+    /*encabezado entero*/
+    display: grid;
+    justify-items: center;
+    grid-area: header;
+
+    .picture {
+        width: 100%;
+
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+
+            .botonera {
+                /* Botonera*/
+                display: inline-block;
+                flex-wrap: nowrap;
+                margin: 5px;
+                border: 3px dashed;
+                padding: 3px;
+                margin-left: 5vh;
+                color: yellow;
+
+                &:hover {
+                    background-color: yellow;
+                    color: tomato;
+
+                    @media all and (min-width: 768px) {
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+}
