@@ -3,6 +3,9 @@
 @import "main";
 @import "mixins";
 @import "contenedores";
+@import "header";
+@import "midLane";
+@import "footer";
 * {
     margin: 0%;
     padding: 0%;
@@ -22,108 +25,6 @@ body {
         text-align: center;
     }
 }
-
-.header {
-    /*encabezado entero*/
-    display: grid;
-    justify-items: center;
-    grid-area: header;
-
-    .picture {
-        width: 100%;
-
-        .banner {
-            width: 100%;
-            padding: 5px;
-            @include d-flex;
-
-            .nav {
-                /* Botonera*/
-                display: inline-block;
-                flex-wrap: nowrap;
-                margin: 5px;
-                border: 3px dashed;
-                padding: 3px;
-                margin-left: 5vh;
-                color: yellow;
-
-                &:hover {
-                    background-color: yellow;
-                    color: tomato;
-
-                    @media all and (min-width: 768px) {
-                        text-align: center;
-
-                    }
-                }
-            }
-        }
-    }
-}
-
-.midLane {
-    /* zonas de contenido*/
-    grid-area: midLane;
-    flex-direction: row;
-    justify-content: center;
-    @include d-flex;
-    
-
-    .destacadoInicio {
-        grid-area: midLane;
-        padding: 20px;
-        @include d-flex;
-        
-
-        
-        .tituloInicio {
-            /* cualquier tipo de titulo*/
-            font-size: 33px;
-            color: rgb(226, 152, 16);
-            flex-direction: column;
-            padding: 20px;
-            transition: all 250ms;
-            @include d-flex;
-
-            &:hover {
-                transform: scale(1.1);
-
-                @media all and (max-width: 768px) {
-                    display: grid;
-                    max-width: 100%;
-
-                    @media all and (min-width: 768px) {
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
-}
-.footer {
-    /*seccion footer anclado*/
-    display: grid;
-    background-color: black;
-    width: 100%;
-    grid-area: footer;
-    opacity: 0.8;
-
-    .footer {
-        /*botonera del footer*/
-        display: inline-block;
-        margin: 10px;
-        border: 3px solid;
-        padding: 3px;
-        opacity: 1;
-
-        .botoneraFooter {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-    }
-}
 .chatSoporte {
     /*va a estar afuera de todo*/
     background-color: red;
@@ -132,14 +33,9 @@ body {
     bottom: 15px;
     right: 15px;
     z-index: 2;
-}
-main {
-    @extend .cajas;
-    @for $i from 1 through 3 {
-        .box#{$i}{
-            @extend .box;
-            background-color: map-get($colores, $i);
-        }
+    @include media-up(sm) {
+        width: 400px;
+        height: 400px;
     }
 }
 /*# sourceMappingURL=estilos.css.map */

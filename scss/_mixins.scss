@@ -3,4 +3,16 @@
     flex-wrap: wrap;
     align-items: center;
 }
-
+@mixin media-up($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+        }
+    }@else{
+        @warn "Error en brackpoint: '#{$breakpoint}'";
+    }
+}
+$breakpoints:(
+    sm : 540px, 
+    md : 768px, 
+    lg : 1024px,)

@@ -8,7 +8,7 @@ body {
   font-weight: 700;
 }
 
-.box, main .box1, main .box2, main .box3 {
+.box {
   border-radius: 4px;
   height: 300px;
   width: 300px;
@@ -43,7 +43,7 @@ body {
   max-width: 100vh;
 }
 
-.cajas, main {
+.cajas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,32 +51,11 @@ body {
   margin: auto;
 }
 
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-body {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 1.3rem;
-  font-weight: 100;
-  color: yellow;
-  background-image: url(../assets/fondo.jpg);
-  background-size: 100%;
-}
-
-body p {
-  /*todos los parrafos dentro del body*/
-  font-size: 2rem;
-  text-align: center;
-}
-
 .header {
   /*encabezado entero*/
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  grid-area: header;
 }
 
 .header .picture {
@@ -85,18 +64,15 @@ body p {
 
 .header .picture .banner {
   width: 100%;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 5px;
 }
 
-.header .picture .banner .nav {
+.header .picture .banner .botonera {
   /* Botonera*/
   display: inline-block;
   -ms-flex-wrap: nowrap;
@@ -108,20 +84,19 @@ body p {
   color: yellow;
 }
 
-.header .picture .banner .nav:hover {
+.header .picture .banner .botonera:hover {
   background-color: yellow;
   color: tomato;
 }
 
 @media all and (min-width: 768px) {
-  .header .picture .banner .nav:hover {
+  .header .picture .banner .botonera:hover {
     text-align: center;
   }
 }
 
 .midLane {
   /* zonas de contenido*/
-  grid-area: midLane;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -140,7 +115,6 @@ body p {
 }
 
 .midLane .destacadoInicio {
-  grid-area: midLane;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,16 +181,7 @@ body p {
   opacity: 0.8;
 }
 
-.footer .footer {
-  /*botonera del footer*/
-  display: inline-block;
-  margin: 10px;
-  border: 3px solid;
-  padding: 3px;
-  opacity: 1;
-}
-
-.footer .footer .botoneraFooter {
+.footer .botoneraFooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +194,26 @@ body p {
           align-items: center;
 }
 
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: yellow;
+  background-image: url(../assets/fondo.jpg);
+  background-size: 100%;
+}
+
+body p {
+  /*todos los parrafos dentro del body*/
+  font-size: 2rem;
+  text-align: center;
+}
+
 .chatSoporte {
   /*va a estar afuera de todo*/
   background-color: red;
@@ -239,15 +224,10 @@ body p {
   z-index: 2;
 }
 
-main .box1 {
-  background-color: red;
-}
-
-main .box2 {
-  background-color: yellow;
-}
-
-main .box3 {
-  background-color: orange;
+@media (min-width: 540px) {
+  .chatSoporte {
+    width: 400px;
+    height: 400px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

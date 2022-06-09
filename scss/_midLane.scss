@@ -1,0 +1,40 @@
+.midLane {
+    /* zonas de contenido*/
+    flex-direction: row;
+    justify-content: center;
+    @include d-flex;
+    
+
+    .destacadoInicio {
+        padding: 20px;
+        @include d-flex;
+        
+
+        
+        .tituloInicio {
+            /* cualquier tipo de titulo*/
+            font-size: 33px;
+            color: rgb(226, 152, 16);
+            flex-direction: column;
+            padding: 20px;
+            transition: all 250ms;
+            @include d-flex;
+
+            &:hover {
+                transform: scale(1.1);
+
+                @media all and (max-width: 768px) {
+                    display: grid;
+                    max-width: 100%;
+
+                    @media all and (min-width: 768px) {
+                        display: flex;
+                        justify-content: center;
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
