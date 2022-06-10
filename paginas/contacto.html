@@ -17,10 +17,23 @@
 </head>
 <body>
 	<div class="containerGrid">
-	<div class="header">
-		<div class="banner">
-		<img src="../assets/banner.png.png" alt="Logotipo en banner">
-		</div>
+		<div class="header">
+			<div class="banner">
+				<picture>
+					<source
+						srcset="../assets/bannerChico.png"
+						media="(max-width: 540px)"
+					/>
+					<source
+						srcset="../assets/banner.png.png"
+						media="(min-width: 540px)"
+					/>
+					<img 
+						src="../assets/banner.png.png" 
+						alt="bannerChacosCard"
+					/>
+				</picture>
+			</div>
 		<div class="btn-group d-grid gap-1 d-md-block">
 			<a href="../index.html" class="btn btn-outline-warning btn-lg">Inicio</a>
 			<a href="noticias.html" class="btn btn-outline-warning btn-lg" role="button">Noticias</a>

@@ -1,11 +1,14 @@
 @mixin d-flex {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
 @mixin media-up($breakpoint){
     @if map-has-key($breakpoints, $breakpoint){
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @media screen and(max-width: map-get($breakpoints, $breakpoint)) {
         @content;
         }
     }@else{
@@ -15,4 +18,21 @@
 $breakpoints:(
     sm : 540px, 
     md : 768px, 
-    lg : 1024px,)
+    lg : 1024px,
+);
+@mixin gridResponsive ($columnas ,$espacio){
+    display:grid;
+    grid-template-columns: repeat($columnas , 1fr );
+    gap: $espacio;
+    @media screen and(max-width: 480px) {
+        grid-template-columns : 1fr;
+        gap : 0em;
+    }
+      
+}@mixin mv($medida : 480px) {
+    @media screen and(max-width: $medida) {
+        @content;
+    }      
+ }
+
+    

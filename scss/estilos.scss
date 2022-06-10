@@ -24,6 +24,7 @@ body {
         font-size: 2rem;
         text-align: center;
     }
+    
 }
 .chatSoporte {
     /*va a estar afuera de todo*/
@@ -33,9 +34,5 @@ body {
     bottom: 15px;
     right: 15px;
     z-index: 2;
-    @include media-up(sm) {
-        width: 400px;
-        height: 400px;
-    }
 }
 /*# sourceMappingURL=estilos.css.map */
