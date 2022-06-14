@@ -2,16 +2,14 @@
     /*encabezado entero*/
     display: grid;
     justify-items: center;
-   /* background-image: url(../assets/chaosCardFondo.png);
-    height: 50rem;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 6%, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 100%);*/
+
     @include mv () {
         width: 100%;
         justify-items:normal;
     }
     .picture {
         width: 100%;
+        
 
         .banner {
             width: 100%;

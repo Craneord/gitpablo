@@ -3,8 +3,10 @@
     @include mv () {
         width: 100%;
     }
+    .productos{
+        width: 10%;
+    }
 
-    
 
     .destacadoInicio {
         padding: 20px;
@@ -17,7 +19,7 @@
         @include mv (768px) {
             text-align: -webkit-center;
         }
-
+    }
         
         .tituloInicio {
             /* cualquier tipo de titulo*/
@@ -45,4 +47,15 @@
             }
         }
     }
+
+.imgJuegos{
+    padding: 10px;
+    img{
+        max-width: 100%;
+    }
+}.col{
+    display: flex;
+}
+.card-img, .card-img-bottom, .card-img-top{
+    height: -webkit-fill-available;
 }

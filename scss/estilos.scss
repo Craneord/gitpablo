@@ -17,7 +17,8 @@ body {
     font-weight: 100;
     color: yellow;
     background-image: url(../assets/fondo.jpg);
-    background-size: 100%;
+    background-size: 50%;
+    background-attachment: fixed;
 
     p {
         /*todos los parrafos dentro del body*/

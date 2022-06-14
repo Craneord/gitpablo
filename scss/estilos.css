@@ -24,15 +24,9 @@ body {
   margin: auto;
 }
 
-@media all and (max-width: 768px) {
-  .contenedorInicio .contenedorInicio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (max-width: 480px) {
+  .contenedorInicio {
+    text-align: -webkit-center;
   }
 }
 
@@ -51,15 +45,46 @@ body {
   margin: auto;
 }
 
+.contenedorNoticias {
+  max-width: 100%;
+  text-align: -webkit-center;
+  padding: 20px;
+}
+
+.contenedorNoticias .noticia {
+  padding: 25px;
+}
+
+.contenedorAnalisis {
+  padding: 10px;
+}
+
+.contenedorAnalisis .analisisJuegos {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .header {
   /*encabezado entero*/
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  /* background-image: url(../assets/chaosCardFondo.png);
-    height: 50rem;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 6%, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 100%);*/
 }
 
 @media screen and (max-width: 480px) {
@@ -122,6 +147,10 @@ body {
   }
 }
 
+.midLane .productos {
+  width: 10%;
+}
+
 .midLane .destacadoInicio {
   padding: 20px;
   display: -webkit-box;
@@ -149,7 +178,7 @@ body {
   }
 }
 
-.midLane .destacadoInicio .tituloInicio {
+.midLane .tituloInicio {
   /* cualquier tipo de titulo*/
   font-size: 33px;
   color: #e29810;
@@ -177,13 +206,13 @@ body {
       flex-direction: column;
 }
 
-.midLane .destacadoInicio .tituloInicio:hover {
+.midLane .tituloInicio:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media all and (max-width: 768px) {
-  .midLane .destacadoInicio .tituloInicio:hover {
+  .midLane .tituloInicio:hover {
     display: -ms-grid;
     display: grid;
     max-width: 100%;
@@ -191,7 +220,7 @@ body {
 }
 
 @media all and (max-width: 768px) and (min-width: 768px) {
-  .midLane .destacadoInicio .tituloInicio:hover {
+  .midLane .tituloInicio:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,6 +228,24 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.imgJuegos {
+  padding: 10px;
+}
+
+.imgJuegos img {
+  max-width: 100%;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  height: -webkit-fill-available;
 }
 
 .footer {
@@ -209,23 +256,6 @@ body {
   width: 100%;
   grid-area: footer;
   opacity: 0.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -258,7 +288,8 @@ body {
   font-weight: 100;
   color: yellow;
   background-image: url(../assets/fondo.jpg);
-  background-size: 100%;
+  background-size: 50%;
+  background-attachment: fixed;
 }
 
 body p {
