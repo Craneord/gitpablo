@@ -2,6 +2,7 @@
     /*encabezado entero*/
     display: grid;
     justify-items: center;
+    margin-bottom: 40px;
 
     @include mv () {
         width: 100%;

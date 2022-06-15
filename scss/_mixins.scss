@@ -15,11 +15,6 @@
         @warn "Error en brackpoint: '#{$breakpoint}'";
     }
 }
-$breakpoints:(
-    sm : 540px, 
-    md : 768px, 
-    lg : 1024px,
-);
 @mixin gridResponsive ($columnas ,$espacio){
     display:grid;
     grid-template-columns: repeat($columnas , 1fr );

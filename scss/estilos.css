@@ -22,12 +22,11 @@ body {
   display: flex;
   max-width: 100vh;
   margin: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .contenedorInicio {
-    text-align: -webkit-center;
-  }
+  margin-bottom: 20px;
+  background-color: black;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contenedor {
@@ -59,6 +58,10 @@ body {
   padding: 10px;
 }
 
+.contenedorAnalisis .titulo {
+  max-width: 100%;
+}
+
 .contenedorAnalisis .analisisJuegos {
   padding: 10px;
   display: -webkit-box;
@@ -85,6 +88,7 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 480px) {
@@ -139,6 +143,48 @@ body {
 
 .midLane {
   /* zonas de contenido*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.midLane .vivo {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .midLane .vivo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .midLane .vivo {
+    width: 100%;
+  }
+}
+
+.midLane .vivo .video {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.midLane .vivo .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -147,8 +193,47 @@ body {
   }
 }
 
-.midLane .productos {
-  width: 10%;
+.midLane .container {
+  background-color: black;
+}
+
+.midLane .container .card {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.midLane .container .card .card-title {
+  font-size: 20px;
+  color: #e29810;
+  padding: 20px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.midLane .container .card .card-title:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .midLane .destacadoInicio {
@@ -248,6 +333,37 @@ body {
   height: -webkit-fill-available;
 }
 
+.list-group-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-right-radius: 0px;
+  z-index: 2;
+  color: yellow;
+  background-color: black;
+  border-color: black;
+  border-end-start-radius: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-group-item + .list-group-item {
+  border-top-width: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-right-radius: 0px;
+  z-index: 2;
+  color: yellow;
+  background-color: black;
+  border-color: black;
+  border-end-start-radius: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer {
   /*seccion footer anclado*/
   display: -ms-grid;
@@ -277,6 +393,27 @@ body {
           align-items: center;
 }
 
+.footer .botoneraFooter .navbar {
+  min-width: 100%;
+}
+
+.footer .botoneraFooter .navbar img {
+  width: 25%;
+  max-width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .botoneraFooter .navbar img {
+    max-width: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .footer .botoneraFooter .navbar img {
+    max-width: 30%;
+  }
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -287,9 +424,27 @@ body {
   font-size: 1.3rem;
   font-weight: 100;
   color: yellow;
-  background-image: url(../assets/fondo.jpg);
+  background-image: url(../assets/fondo2.jpg);
   background-size: 50%;
   background-attachment: fixed;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: 200vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 200vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: 150vh;
+  }
 }
 
 body p {
@@ -300,11 +455,12 @@ body p {
 
 .chatSoporte {
   /*va a estar afuera de todo*/
-  background-color: red;
+  background-color: black;
   color: white;
   position: fixed;
-  bottom: 15px;
+  bottom: 10px;
   right: 15px;
   z-index: 2;
+  border-radius: 10%;
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -14,5 +14,19 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            .navbar{
+                min-width: 100%;
+            img{
+                width: 25%;
+                max-width: 25%;
+                @include media-up (md){
+                    max-width: 15%;
+                @include mv(){
+                    max-width: 30%;
+                }
+                }
+            
+            }
         }
     }
+}

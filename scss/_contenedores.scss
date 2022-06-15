@@ -10,10 +10,10 @@
     display: flex;
     max-width: 100vh;
     margin: auto;
+    margin-bottom: 20px;
+    background-color: black;
+    justify-content: space-evenly;
 
-    @include mv{
-            text-align: -webkit-center;
-        }
     }
 
 .contenedor {
@@ -37,6 +37,9 @@
 }
 .contenedorAnalisis{
     padding: 10px;
+    .titulo{
+        max-width: 100%;
+    }
     .analisisJuegos{
         padding: 10px;
         @include d-flex;
