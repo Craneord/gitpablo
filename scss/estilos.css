@@ -187,6 +187,10 @@ body {
   width: 100%;
 }
 
+.midLane .formulario {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   .midLane {
     width: 100%;
@@ -462,5 +466,8 @@ body p {
   right: 15px;
   z-index: 2;
   border-radius: 10%;
+}
+.botoneraNueva {
+  margin: auto;
 }
 /*# sourceMappingURL=estilos.css.map */

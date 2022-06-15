@@ -13,7 +13,6 @@
         @include media-up(md){
             width: 100%;
         }
-    
 
     .video{
         height: 0;
@@ -28,6 +27,9 @@
         }
     }
 }
+    .formulario{
+        max-width: 100%;
+    }
     @include mv () {
         width: 100%;
     }
