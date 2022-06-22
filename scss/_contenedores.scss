@@ -45,3 +45,13 @@
         @include d-flex;
     }
 }
+.redes{
+        margin-bottom: 30px;
+    .accordion-button:not(.collapsed) {
+        color: black;
+    }
+    .accordion-header{
+        margin-bottom: 5px;
+        color: black;
+    }
+}

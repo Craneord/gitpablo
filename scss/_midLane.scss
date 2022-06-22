@@ -104,7 +104,7 @@
     display: flex;
 }
 .card-img, .card-img-bottom, .card-img-top{
-    height: -webkit-fill-available;
+    height: stretch;
 }
 .list-group-item.active {
     display: flex;

@@ -83,6 +83,19 @@ body {
       align-content: center;
 }
 
+.redes {
+  margin-bottom: 30px;
+}
+
+.redes .accordion-button:not(.collapsed) {
+  color: black;
+}
+
+.redes .accordion-header {
+  margin-bottom: 5px;
+  color: black;
+}
+
 .header {
   /*encabezado entero*/
   display: -ms-grid;
@@ -335,6 +348,8 @@ body {
 
 .card-img, .card-img-bottom, .card-img-top {
   height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
 }
 
 .list-group-item.active {
