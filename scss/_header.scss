@@ -2,45 +2,47 @@
     /*encabezado entero*/
     display: grid;
     justify-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
-    @include mv () {
-        width: 100%;
-        justify-items:normal;
-    }
+
     .picture {
         width: 100%;
-        
+
+
 
         .banner {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             padding: 5px;
+
             @include mv (768px) {
                 width: 50%;
             }
-
-            .botonera {
-                /* Botonera*/
-                display: inline-block;
-                flex-wrap: nowrap;
-                margin: 5px;
-                border: 3px dashed;
-                padding: 3px;
-                margin-left: 5vh;
-                color: yellow;
-
-                &:hover {
-                    background-color: yellow;
-                    color: tomato;
-
-                    @media all and (min-width: 768px) {
-                        text-align: center;
-
-                    }
-                }
-            }
         }
     }
+}
+
+.botonera {
+    .container-fluid{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Botonera*/
+    @media all and (max-width: 992px) {
+        text-align: center;
+
+        @media all and (max-width: 992px) {
+            min-width: 100%;
+        }
+    }
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='gold' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler{
+    border: 2px solid orange;
+    box-shadow: none;
 }
