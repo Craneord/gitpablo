@@ -205,6 +205,10 @@ body {
   width: 100%;
 }
 
+.midLane .contactoGeneral .redes {
+  max-width: 100%;
+}
+
 .midLane .formulario {
   max-width: 100%;
 }
