@@ -13,6 +13,12 @@
         @include media-up(md){
             width: 100%;
         }
+    }
+    
+        .g-3{
+            border: outset;
+            border-color: gray;
+        }
 
     .video{
         height: 0;
@@ -26,7 +32,10 @@
             width: 100%;
         }
     }
-}
+    .textoCarrusel{
+        font-size: 1rem;
+    }
+
 .contactoGeneral{
     .redes{
         max-width: 100%;
@@ -70,9 +79,12 @@
         align-content: center;
         @include mv (768px) {
             text-align: -webkit-center;
+            .carousel-inner{
+                width: 150%;
+            }
         }
     }
-        
+}       
         .tituloInicio {
             /* cualquier tipo de titulo*/
             font-size: 33px;
@@ -81,6 +93,8 @@
             transition: all 250ms;
             @include d-flex;
             flex-direction: column;
+            img, svg {
+                width: 75%;
 
             &:hover {
                 transform: scale(1.1);
@@ -98,7 +112,7 @@
                 }
             }
         }
-    }
+     }
 
 .imgJuegos{
     padding: 10px;

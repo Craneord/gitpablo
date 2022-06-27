@@ -191,18 +191,27 @@ body {
   }
 }
 
-.midLane .vivo .video {
+.midLane .g-3 {
+  border: outset;
+  border-color: gray;
+}
+
+.midLane .video {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.midLane .vivo .video iframe {
+.midLane .video iframe {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.midLane .textoCarrusel {
+  font-size: 1rem;
 }
 
 .midLane .contactoGeneral .redes {
@@ -286,9 +295,12 @@ body {
   .midLane .destacadoInicio {
     text-align: -webkit-center;
   }
+  .midLane .destacadoInicio .carousel-inner {
+    width: 150%;
+  }
 }
 
-.midLane .tituloInicio {
+.tituloInicio {
   /* cualquier tipo de titulo*/
   font-size: 33px;
   color: #e29810;
@@ -316,13 +328,17 @@ body {
       flex-direction: column;
 }
 
-.midLane .tituloInicio:hover {
+.tituloInicio img, .tituloInicio svg {
+  width: 75%;
+}
+
+.tituloInicio img:hover, .tituloInicio svg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media all and (max-width: 768px) {
-  .midLane .tituloInicio:hover {
+  .tituloInicio img:hover, .tituloInicio svg:hover {
     display: -ms-grid;
     display: grid;
     max-width: 100%;
@@ -330,7 +346,7 @@ body {
 }
 
 @media all and (max-width: 768px) and (min-width: 768px) {
-  .midLane .tituloInicio:hover {
+  .tituloInicio img:hover, .tituloInicio svg:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
